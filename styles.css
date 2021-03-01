@@ -1,0 +1,114 @@
+svg {
+  background-color: rgb(2, 57, 109);
+  width: 100vw;
+  height: 100vh;
+}
+
+.wheel {
+  stroke: black;
+  fill: rgb(255, 240, 128);
+  stroke-width: 5px;
+}
+
+.bus {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(255, 241, 162);
+  stroke-width: 4px;
+}
+
+.window {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(255, 239, 147);
+  stroke-width: 5px;
+}
+
+.house {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(255, 239, 147);
+  stroke-width: 5px;
+}
+
+.housewindow {
+  stroke: rgb(0, 0, 0);
+  fill: #ffcc00;
+  stroke-width: 5px;
+  animation: pulsew 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsew {
+  from {
+    opacity: 1;
+    fill: #ffe064;
+  }
+  to {
+    opacity: 1;
+    fill: #ffcc00;
+  }
+}
+
+.door {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(252, 224, 66);
+  stroke-width: 5px;
+}
+
+.flower {
+  stroke: black;
+  fill: ;
+  stroke-width: 3px;
+}
+
+.flowerpetals {
+  stroke: rgb(0, 0, 0);
+  /* fill: #ff9ff7; */
+  stroke-width: 3px;
+  animation: pulse 2s infinite;
+}
+
+.flowereye {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(252, 224, 66);
+  stroke-width: 3px;
+}
+
+.star {
+  stroke: rgb(0, 0, 0);
+  fill: rgb(252, 224, 66);
+  stroke-width: 3px;
+}
+
+.busgroup {
+  position: relative;
+  animation: movebus 15s infinite;
+}
+
+@keyframes movebus {
+  0% {
+    left: -80px;
+  }
+  40% {
+    left: 300px;
+  }
+  60% {
+    left: 300px;
+  }
+  100% {
+    left: 800px;
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    fill: #ff9ff7;
+  }
+  50% {
+    opacity: 0.95;
+    fill: #ff5f6c;
+  }
+  to {
+    opacity: 1;
+    fill: #ffa2f7;
+  }
+}
